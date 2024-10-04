@@ -13,7 +13,7 @@ on:
 jobs:
   trabalho01:
     name: Passo01
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     #Agora irei programar os passos do script
     steps:
       - name: passo01
@@ -22,10 +22,9 @@ jobs:
         run: echo "Executando o segundo passo"
       - name: passo03
         run: echo "Executando o terceiro passo"
-
   trabalho02:
     name: Passo02
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     #Agora irei programar os passos do script
     steps:
       - name: passo04
@@ -33,11 +32,10 @@ jobs:
       - name: passo05
         run: echo "Executando o quinto passo"
       - name: passo06
-        run: echo "Executando o sexto passo"
-        
+        run: echo "Executando o sexto passo" 
   trabalho03:
     name: Passo03
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     #Agora irei programar os passos do script
     steps:
       - name: passo07
