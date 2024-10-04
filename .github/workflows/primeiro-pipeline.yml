@@ -1,0 +1,48 @@
+#Aqui iremos nomear adequadamente nosso fluxo de tpipeline (fluxo de trabalho)
+name: Primeiro workflow
+# aqui iremos listar os eventos (gatilhos) que disparam o pipeline
+on:
+  push:
+    branches:
+      - main
+      - master
+      - develop
+  pull_request: 
+    branches: [main, master, develop]
+    
+jobs:
+  trabalho01:
+    name: Passo01
+    runs-on: ubunto-latest
+    #Agora irei programar os passos do script
+    steps:
+      - name: passo01
+        run: echo "Executando o primeiro passo"
+      - name: passo02
+        run: echo "Executando o segundo passo"
+      - name: passo03
+        run: echo "Executando o terceiro passo"
+
+  trabalho02:
+    name: Passo02
+    runs-on: ubunto-latest
+    #Agora irei programar os passos do script
+    steps:
+      - name: passo04
+        run: echo "Executando o quarto passo"
+      - name: passo05
+        run: echo "Executando o quinto passo"
+      - name: passo06
+        run: echo "Executando o sexto passo"
+        
+  trabalho03:
+    name: Passo03
+    runs-on: ubunto-latest
+    #Agora irei programar os passos do script
+    steps:
+      - name: passo07
+        run: echo "Executando o setimo passo"
+      - name: passo08
+        run: echo "Executando o oitavo passo"
+      - name: passo09
+        run: echo "Executando o nono passo"
